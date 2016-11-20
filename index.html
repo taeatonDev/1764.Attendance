@@ -25,11 +25,11 @@
     <script src="/dist/js/attendance-module.js"></script>
     <script src="/dist/js/admin/admin-controller.js"></script>
     <script src="/dist/js/admin/admin-directive.js"></script>
-    <script src="/dist/js/punchcard/punchcard-controller.js"></script>
-    <script src="/dist/js/punchcard/punchcard-directive.js"></script>
+    <script src="/dist/js/home/home-controller.js"></script>
     <script src="/dist/js/registration/register-controller.js"></script>
     <script src="/dist/js/registration/register-directive.js"></script>
-    <script src="/dist/js/home/home-controller.js"></script>
+    <script src="/dist/js/punchcard/punchcard-controller.js"></script>
+    <script src="/dist/js/punchcard/punchcard-directive.js"></script>
     <script src="/dist/js/reporting/report-controller.js"></script>
     <script src="/dist/js/reporting/report-directive.js"></script>
     <script src="/dist/js/services/attendance-service.js"></script>
@@ -38,7 +38,10 @@
 <body ng-app="Attendance">
 <div ng-controller="HomeController">
     <nav class="navbar navbar-default">
+        <a class="navbar-brand" href="#"><img class="img-responsive navbar-brand-img" src="/content/images/Login%20Logo.png"></a>
         <div class="container-fluid">
+            <!--Brand Info, brand name and image-->
+
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <!--Only shows in small and extra small layout-->
@@ -48,8 +51,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <!--Brand Info, brand name and image-->
-                <a class="navbar-brand" href="#">{{Brand}}</a>
+
             </div>
 
             <!-- Nav Buttons -->
