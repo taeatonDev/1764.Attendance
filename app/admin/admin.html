@@ -1,0 +1,31 @@
+﻿<div ng-switch="Authenticated">
+    <div ng-switch-when="false">
+        <div class="row">
+            <div class="col-xs-1 col-md-3"></div>
+            <div class="col-xs-10 col-md-6">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">{{Title}}</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-xs-1"></div>
+                            <div class="col-xs-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon hidden-xs" id="basic-addon1">Pin</span>
+                                    <input type="text" class="form-control" placeholder="1764" aria-describedby="basic-addon1" ng-model="APin.Pin">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button" ng-click="Submit()">Login</button>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-xs-1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-1 col-md-3"></div>
+        </div>
+    </div>
+    <div ng-switch-when="true" report></div>
+</div>
